@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8C3EFC3-D907-4E29-8580-F6F11228F7DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalProjectRough</RootNamespace>
+    <AssemblyName>FinalProjectRough</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MoreLinq, Version=3.3.2.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
+      <HintPath>..\packages\morelinq.3.3.2\lib\net451\MoreLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplyCouponForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplyCouponForm.Designer.cs">
+      <DependentUpon>ApplyCouponForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreYouSureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreYouSureForm.Designer.cs">
+      <DependentUpon>AreYouSureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoZoneDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoZoneDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="CartItem.cs" />
+    <Compile Include="CreditCheckoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditCheckoutForm.Designer.cs">
+      <DependentUpon>CreditCheckoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="CashCheckoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashCheckoutForm.Designer.cs">
+      <DependentUpon>CashCheckoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiftCard.cs" />
+    <Compile Include="GiftCardCheckoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiftCardCheckoutForm.Designer.cs">
+      <DependentUpon>GiftCardCheckoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogOutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogOutForm.Designer.cs">
+      <DependentUpon>LogOutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs" />
+    <Compile Include="ManagerModeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerModeForm.Designer.cs">
+      <DependentUpon>ManagerModeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="PointOfSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PointOfSaleForm.Designer.cs">
+      <DependentUpon>PointOfSaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductButton.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProductForm.Designer.cs">
+      <DependentUpon>UpdateProductForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ApplyCouponForm.resx">
+      <DependentUpon>ApplyCouponForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AreYouSureForm.resx">
+      <DependentUpon>AreYouSureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashCheckoutForm.resx">
+      <DependentUpon>CashCheckoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditCheckoutForm.resx">
+      <DependentUpon>CreditCheckoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiftCardCheckoutForm.resx">
+      <DependentUpon>GiftCardCheckoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogOutForm.resx">
+      <DependentUpon>LogOutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerModeForm.resx">
+      <DependentUpon>ManagerModeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointOfSaleForm.resx">
+      <DependentUpon>PointOfSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UpdateProductForm.resx">
+      <DependentUpon>UpdateProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AutoZoneDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AutoZoneDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutoZoneDB.dbml.layout">
+      <DependentUpon>AutoZoneDB.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\autozone-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\autozone-logo-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\penzoil-autozone-sponsor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ford-autozone-sponsor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\harley-davidson-autozone-sponsor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\firestone-autozone-sponsor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\duralast-autozone-sponsor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autozone-png-logo-6233.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
